@@ -1,0 +1,754 @@
+/*ALL START*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.hvid {
+    color: white;
+}
+
+.stortekst {
+    font-size: 40px;
+}
+
+.overskrift {
+    margin: auto;
+    text-align: center;
+}
+
+.kontaktstor {
+    display: inline-block;
+    font-size: 31px;
+}
+
+.green {
+    color: #21C152;
+}
+
+.overskrift2 {
+    font-size: 15px;
+}
+
+
+/*ALL SLUT*/
+
+/*HEADER START*/
+
+header {
+    background-image: url("hi.jpg");
+    background-position: left top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.logo {
+    width: 40%;
+    height: auto;
+    margin: 15px;
+}
+
+
+.menuting {
+    border: white 2px solid;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 10px;
+    background-color: white;
+
+
+}
+
+
+.topnav {
+    border-bottom: thin black solid;
+}
+
+
+/*HEADER SLUT*/
+
+/*PORTFOLIO START*/
+
+#gul {
+    color: #FFCF03;
+}
+
+
+
+
+.seminblog {
+    width: 40%;
+    display: block;
+    margin: auto;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+
+.containerforside {
+    display: flex;
+}
+
+/*PORTFOLIO SLUT*/
+
+/*OM MIG START*/
+
+.noundermargin {
+    margin-bottom: 0;
+}
+
+.migbillede {
+    width: 100%;
+    border-radius: 13px;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    flex: 1;
+}
+
+.ommigcontainer {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    flex-direction: column;
+}
+
+.cv {
+    flex: 1;
+}
+
+.hentcvknap {
+    display: block;
+    margin: auto;
+    width: 60%;
+    margin-top: 30px;
+}
+
+
+.hvemcontainer {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+}
+
+.hvemkid {
+    flex: 1;
+    width: 100%;
+    margin: auto;
+}
+
+.hvempic {
+    width: 80%;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.hvemoverskrift {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.hvemtekst {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+article .hvemtekst {
+    width: 80%;
+    margin: auto;
+}
+
+.mereom {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.icon1 {
+    width: 10%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.minejobs {
+    font-size: 25px;
+    margin: 30px 0;
+}
+
+.mereom1img {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+
+/*SKILLBAR STUFF START*/
+
+.skillcontainer {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+}
+
+.skill1,
+.skill2 {
+    flex: 1;
+}
+
+.skillbar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+
+}
+
+.skills {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 30px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.htmlogcss {
+    width: 85%;
+    background-color: #21C152;
+}
+
+.js {
+    width: 5%;
+    background-color: #21C152;
+}
+
+.photoshop {
+    width: 55%;
+    background-color: #21C152;
+}
+
+.illustrator {
+    width: 55%;
+    background-color: #21C152;
+}
+
+.xd {
+    width: 90%;
+    background-color: #21C152;
+}
+
+.wordpress {
+    width: 60%;
+    background-color: #21C152;
+}
+
+.id {
+    width: 15%;
+    background-color: #21C152;
+}
+
+.fun {
+    width: 95%;
+    background-color: #21C152;
+}
+
+.bored {
+    width: 100%;
+    background-color: #21C152;
+    animation: infinite 0.5s;
+    animation-name: bored;
+}
+
+@keyframes bored {
+    0%   {background-color: red;}
+    20%  {background-color: pink;}
+    40%  {background-color: #11c6f3;}
+    60%  {background-color: lime;}
+    80%  {background-color: yellow;}
+    100% {background-color: orange;}
+  
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+.skillting {
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+
+}
+
+.skillting h3 {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.skillting h3 {
+    text-align: left;
+}
+
+
+
+
+/*SKILLBAR STUFF SLUT*/
+
+/*OM MIG SLUT*/
+
+/*KONTAKT START*/
+
+#red {
+    color: #FF2F2F;
+}
+
+.overskrift #red {
+    padding: 30px;
+    font-size: 40px;
+}
+
+
+
+.redbackground {
+    background-color: #f6504c;
+
+
+}
+
+.redbackground h3 {
+    padding: 50px 0;
+
+}
+
+.form input {
+    display: block;
+    background-color: #f6504c;
+    border: white 2px solid;
+    border-radius: 20px;
+    padding: 15px;
+    margin: auto;
+    width: 80%;
+    color: white;
+    font-size: 23px;
+
+}
+
+.form textarea {
+    display: block;
+    margin: auto;
+    background-color: #f6504c;
+    border: white solid 2px;
+    border-radius: 20px;
+    padding: 15px;
+    width: 80%;
+    color: white;
+    font-size: 23px;
+}
+
+#formknap {
+    border-radius: 45px;
+    width: 70%;
+}
+
+
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: white;
+}
+
+.hr {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: black thin solid;
+}
+
+.kontaktcontainer {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.kontaktkid {
+    flex: 1;
+}
+
+
+.socialcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.socialkid {
+    flex: 1;
+    align-self: center;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.kontaktinfo {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.socialcontainer h3 {
+    margin-bottom: 30px;
+}
+
+
+/*IDE FRA COMPETA START*/
+
+.skifttak {
+
+
+    font-size: 25px;
+    width: 80%;
+    padding: 30px 0px;
+    margin: auto;
+    padding-left: 15%;
+
+}
+
+.skiftes {
+    display: inline-block;
+}
+
+
+.skiftes span:nth-child(2) {
+    animation-delay: 3s;
+    color: white;
+}
+
+.skiftes span:nth-child(3) {
+    animation-delay: 6s;
+    color: white;
+}
+
+.skiftes span:nth-child(4) {
+    animation-delay: 9s;
+    color: white;
+}
+
+.skiftes span {
+    position: absolute;
+    opacity: 0;
+    color: white;
+    animation: wowowow 12s linear infinite 0s;
+}
+
+@-webkit-keyframes wowowow {
+    0% {
+        opacity: 0;
+    }
+    2% {
+        opacity: 0;
+        -webkit-transform: translateY(-55px);
+    }
+    5% {
+        opacity: 1;
+        -webkit-transform: translateY(-25px);
+    }
+    17% {
+        opacity: 1;
+        -webkit-transform: translateY(-25px);
+    }
+    20% {
+        opacity: 0;
+        -webkit-transform: translateY(5px);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*IDE FRA COMPETA SLUT*/
+
+/*KONTAKT SLUT*/
+
+/*OPGAVESIDEN START*/
+
+.orange {
+    color: #FF9D00;
+}
+
+.opgavefakta {
+
+    font-size: 20px;
+}
+
+.opgavefaktabox {
+    width: 80%;
+    margin: auto;
+    display: block;
+    height: auto;
+    border
+}
+
+.opgavefaktabox p {
+    font-size: 14px;
+}
+
+
+
+.opgaven {
+    width: 80%;
+    display: block;
+    margin: auto;
+    line-height: 25px;
+}
+
+.opgavebilleder {
+    width: 100%;
+    height: auto;
+}
+
+.opgaveoverskrift {
+    font-size: 50px;
+
+}
+
+.opgaven img {
+    margin: 30px 0;
+}
+
+
+
+/*OPGAVESIDEN SLUT*/
+
+/*FOOTER START*/
+
+footer hr {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: black thin solid;
+
+}
+
+footer h4 {
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+}
+
+footer h3 {
+
+    text-align: center;
+}
+
+/*FOOTER SLUT*/
+
+/* Fra w3 schools START (er redigeret i af mig)*/
+
+.topnav {
+    overflow: hidden;
+    /*    nav baggrunds farve*/
+    background-color: #;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    height: auto;
+}
+
+.icon {
+    transition: 0.3s;
+}
+
+
+
+.menutop {
+    margin-top: 80px;
+}
+
+
+
+.topnav .icon {
+    display: none;
+}
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    border: 2px white solid;
+    border-radius: 15px;
+
+
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/*Fra w3schools SLUT*/
+
+/*MOBILE fra w3 schools */
+
+@media screen and (max-width: 768px) {
+
+    /*Fra w3schools START*/
+    .topnav a {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    /*Fra w3schools SLUT*/
+}
+
+
+
+
+/*WEB SIZE*/
+
+@media screen and (min-width: 1024px) {
+
+    /*   HEADER START */
+    .menutop {
+        margin-top: 10px;
+    }
+
+    .topnav {
+        text-align: center;
+    }
+
+    /*    HEADER SLUT*/
+    /*PORTFOLIO START*/
+    .containerforside img {
+        border: red solid 2px;
+        width 20%;
+    }
+    /*PORTFOLIO SLUT*/
+    /*    KONTAKT START*/
+    .form input {
+        display: inline-block;
+    }
+
+    .kontaktcontainer hr {
+        display: none;
+    }
+
+
+    /*    KONTAKT SLUT*/
+}
+
+/*TABLET SIZE*/
+
+@media screen and (min-width: 767px) {
+
+
+    /*  HEADER START  */
+    .menutop {
+        margin-top: 10px;
+    }
+
+    /*  HEADER SLUT  */
+    /*PORTFOLIO START*/
+    .containerforside {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        width: 100%;
+
+    }
+
+    .containerforside img {
+        border: red solid 2px;
+        width: 50%;
+    }
+
+    /*PORTFOLIO SLUT */
+    /*    KONTAKT START*/
+    .form input {
+        display: inline-block;
+    }
+
+    .kontaktcontainer hr {
+        display: none;
+    }
+
+    /*    KONTAKT SLUT   */
+}

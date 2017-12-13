@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Andy</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+<img src="images/donelogo.png" alt="Logo" class="logo">
+        
+        </a>
+
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="menuting menutop">Portfolio</a>
+            <a href="om%20mig.html" class="menuting">Om mig</a>
+            <a href="kontakt.html" class="menuting">Kontakt</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
+                <div class="container" onclick="myFunction2(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+            </a>
+        </nav>
+
+    </header>
+
+
+
+
+
+    <section class="overskrift stortekst">
+        <h3>Mine <span id="gul"> værker</span></h3>
+
+    </section>
+
+    <img src="images/seminblog.png" alt="klik for at se min blog" class="seminblog">
+
+
+
+    <section class="containerforside">
+
+        <a href="">
+     <img src="" alt="">
+     </a>
+        <a href="">
+        <img src="" alt="">
+        </a>
+        <a href="">
+        <img src="" alt="">
+        </a>
+        <a href="">
+        <img src="" alt="">
+        </a>
+        <a href="">
+        <img src="" alt="">
+        </a>
+        <a href="">
+        <img src="" alt="">
+        </a>
+        <a href="">
+        <img src="" alt="">
+        </a>
+        <a href="">
+        <img src="" alt="">
+        </a>
+
+
+    </section>
+
+
+    <footer>
+        <hr>
+
+        <h4>Designer | Koder | Leder | Kommunikator</h4>
+
+        <h3>Andy Le Quach</h3>
+    </footer>
+
+
+    <script>
+        /*Fra w3schools start*/
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function myFunction2(x) {
+            x.classList.toggle("change");
+        }
+
+        /*Fra w3schools Slut*/
+    </script>
+
+</body>
+</html>
