@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="da">
 <head>
     <meta charset="utf-8">
     <title>Andy</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="/images/titelicon2.png">
 </head>
 
 <body>
@@ -15,7 +17,11 @@
         
         </a>
 
-        <nav class="topnav" id="myTopnav">
+       
+
+    </header>
+
+     <nav class="topnav" id="myTopnav">
             <a href="index.html" class="menuting menutop">Portfolio</a>
             <a href="om%20mig.html" class="menuting">Om mig</a>
             <a href="kontakt.html" class="menuting">Kontakt</a>
@@ -28,8 +34,6 @@
 
             </a>
         </nav>
-
-    </header>
 
     <section class="overskrift">
         <h2 id="red" class="kontaktstor"> Kontakt</h2>
@@ -52,46 +56,47 @@
     </div>    
 </div>
 
-<!--IDE FRA COMPETA START-->
+<!--IDE FRA COMPETA SLUT-->
 <br>
 
         <form class="form" action="mailto:eaaalq@students.eaaa.dk" method="post" enctype="text/plain">
-            <section>
+            <section class="bla">
                 <input type="text" name="name" placeholder="Navn:">
-                <br>
+                <br id="brr"><div class="woops"></div>
                 <input type="text" name="email" placeholder="Email:">
             </section>
-            <br>
+           <br>
             <textarea name="comments" rows="10" placeholder="Besked:"></textarea>
             <br>
             <input type="submit" value="Send" id="formknap">
-            <br>
+          <br>
             <input type="reset" value="Reset" id="formknap">
-<br>
         </form>
-
+   
+     
     </section>
 
     <div class="kontaktcontainer">
 
         <section class="kontaktkid kontaktinfo">
-            <h1 class="kontaktstor overskrift">Kontakt</h1>
+            <h1 class=" overskrift">Kontakt</h1>
             <p>Andy Le Quach</p>
-            <p>+45 24 26 74 50</p>
-            <p>Eaaalq@students.eaaa.dk</p>
+            <a href="mailto:Eaaalq@students.eaaa.dk"><p>Eaaalq@students.eaaa.dk</p></a>
             <p>Århus C, 8000, Danmark</p>
-            <p></p>
-
-
+            <a href ="tel:004524267450"><p>+45 24 26 74 50</p></a>
 
 
         </section>
+        
+        
+        <div class="vl"></div>
 
         <hr class="hr">
 
-        <section class="kontaktkid socialcontainer">
-        
+         <section class="kontaktkid socialcontainer">
         <h3 class="kontaktstor overskrift" >Følg mig på sociale medier:</h3>
+        
+       
         <a href="https://www.facebook.com/AndyLQ" target="_blank" class="socialkid">
         <img src="images/faceicon.png" alt="Icon Facebook" >
             </a>
@@ -116,8 +121,7 @@
 
 
 
-
-    <footer>
+ <footer>
         <hr>
 
         <h4>Designer | Koder | Leder | Kommunikator</h4>
@@ -127,7 +131,7 @@
 
 
     <script>
-        /*Fra w3schools START*/
+        /*Fra w3schools start*/
         function myFunction() {
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
@@ -141,9 +145,8 @@
             x.classList.toggle("change");
         }
 
-        /*FRA W3SCHOOLS SLUT*/
+        /*Fra w3schools Slut*/
     </script>
 
 </body>
-
 </html>

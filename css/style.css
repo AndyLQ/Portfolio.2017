@@ -23,11 +23,6 @@ body {
     text-align: center;
 }
 
-.kontaktstor {
-    display: inline-block;
-    font-size: 31px;
-}
-
 .green {
     color: #21C152;
 }
@@ -42,11 +37,12 @@ body {
 /*HEADER START*/
 
 header {
-    background-image: url("hi.jpg");
+    background-image: url("../images/headerpic2.png");
     background-position: left top;
     background-size: 100%;
     background-repeat: no-repeat;
     height: auto;
+    min-height: 400px;
 }
 
 .logo {
@@ -80,20 +76,73 @@ header {
     color: #FFCF03;
 }
 
+.op {
+    border: thin #FFCF03 solid;
+    color: white;
+    background-color: #FFCF03;
+    position: absolute;
+   bottom: 0;
+   right: 0;
+    width: 100%;
+    border-radius: 7px;
+}
 
 
+
+.containerforside a {
+    text-decoration: none;
+}
 
 .seminblog {
-    width: 40%;
+    width: 60%;
     display: block;
     margin: auto;
     height: auto;
     margin-bottom: 30px;
 }
 
-
 .containerforside {
     display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+
+}
+
+
+.kidforside {
+    width: 500px;
+    margin: auto;
+    border: 2px #FFCF03 solid;
+    border-radius: 10px;
+    background-color: #;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 500px;
+    position: relative;
+}
+
+.kidforside:hover {
+    background-color: #FFCF03;
+}
+
+.kidforside:hover img {
+    transform: scale(1.1);
+    
+}
+
+.kidforside img {
+    margin: auto;
+    width: 80%;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.kidforside p {
+    text-align: center;
+    display: block;
 }
 
 /*PORTFOLIO SLUT*/
@@ -227,7 +276,7 @@ article .hvemtekst {
 
 
 .htmlogcss {
-    width: 85%;
+    width: 75%;
     background-color: #21C152;
 }
 
@@ -274,24 +323,58 @@ article .hvemtekst {
 }
 
 @keyframes bored {
-    0%   {background-color: red;}
-    20%  {background-color: pink;}
-    40%  {background-color: #11c6f3;}
-    60%  {background-color: lime;}
-    80%  {background-color: yellow;}
-    100% {background-color: orange;}
-  
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+    0% {
+        background-color: red;
+    }
+    20% {
+        background-color: pink;
+    }
+    40% {
+        background-color: #11c6f3;
+    }
+    60% {
+        background-color: lime;
+    }
+    80% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: orange;
+    }
+
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
 
 
@@ -334,17 +417,28 @@ article .hvemtekst {
     font-size: 40px;
 }
 
+.kontaktstor {
+    display: inline-block;
+    font-size: 31px;
+}
 
 
 .redbackground {
     background-color: #f6504c;
+    padding-bottom: 20px;
 
 
 }
 
 .redbackground h3 {
-    padding: 50px 0;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    display: block;
 
+}
+
+.form {
+    margin-bottom: 30px;
 }
 
 .form input {
@@ -357,6 +451,7 @@ article .hvemtekst {
     width: 80%;
     color: white;
     font-size: 23px;
+    margin-bottom: 10px;
 
 }
 
@@ -370,11 +465,13 @@ article .hvemtekst {
     width: 80%;
     color: white;
     font-size: 23px;
+    margin-bottom: 10px;
 }
 
 #formknap {
     border-radius: 45px;
     width: 70%;
+    margin-bottom: 10px;
 }
 
 
@@ -421,14 +518,37 @@ article .hvemtekst {
     width: 80%;
     display: block;
     margin: auto;
+    text-align: center;
 }
 
 .socialcontainer h3 {
     margin-bottom: 30px;
 }
 
+.kontaktinfo p {
+    color: black;
+}
 
-/*IDE FRA COMPETA START*/
+.kontaktinfo a {
+    text-decoration: none;
+    transition: .3s;
+}
+
+.kontaktinfo a:hover {
+    font-size: 20px;
+}
+
+.kontaktcontainer h3 {
+    margin-bottom: 50px;
+}
+
+.kontaktinfo h1 {
+ display: inline-block;
+    font-size: 31px;
+}
+
+
+/*IDE FRA COMPETA START  -link-*/
 
 .skifttak {
 
@@ -438,6 +558,8 @@ article .hvemtekst {
     padding: 30px 0px;
     margin: auto;
     padding-left: 15%;
+    
+    
 
 }
 
@@ -509,27 +631,45 @@ article .hvemtekst {
 .opgavefakta {
 
     font-size: 20px;
+    margin-top: 5px;
 }
 
 .opgavefaktabox {
     width: 80%;
+    border: medium #FF9D00 solid;
+    padding: 20px;
+    border-radius: ;
+    position: static;
+    background-color: #FF9D00;
+    right: 3%;
+    color: white;
     margin: auto;
-    display: block;
-    height: auto;
-    border
+    
 }
 
 .opgavefaktabox p {
     font-size: 14px;
 }
 
+.faktabox {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
 
 
 .opgaven {
+    width: 100%;
+    display: block;
+    line-height: 25px;
+}
+
+.artiklen {
     width: 80%;
     display: block;
     margin: auto;
-    line-height: 25px;
 }
 
 .opgavebilleder {
@@ -546,6 +686,31 @@ article .hvemtekst {
     margin: 30px 0;
 }
 
+.opgavefaktabox div {
+    border: 2px solid white;
+    background-color: #FF9D00;
+    color: white;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 0 5px 0 5px;
+}
+
+
+.opgavefaktabox a:visited {
+    color: white;
+}
+
+.opgavefaktabox a {
+    text-decoration: none;
+}
+
+.faktaopgavebox {
+    width: 100%;
+    display: block;
+    margin: auto;
+    background-color: #FF9D00;
+}
+    
 
 
 /*OPGAVESIDEN SLUT*/
@@ -575,12 +740,13 @@ footer h3 {
 
 /*FOOTER SLUT*/
 
-/* Fra w3 schools START (er redigeret i af mig)*/
+/* taget fra w3 schools START (er redigeret i af mig)*/
 
 .topnav {
     overflow: hidden;
-    /*    nav baggrunds farve*/
-    background-color: #;
+    border: thin black solid;
+    background-color: ;
+ 
 }
 
 .topnav a {
@@ -649,6 +815,23 @@ footer h3 {
 
 /*Fra w3schools SLUT*/
 
+
+
+/* LILLE MOBILE TIL PORTFOLIO */
+@media screen and (max-width: 600px) {
+    
+    .kidforside {
+        width: 90%;
+        height: auto;
+    }
+    
+    .op {
+        position: relative;
+    }
+    
+    
+}
+
 /*MOBILE fra w3 schools */
 
 @media screen and (max-width: 768px) {
@@ -680,6 +863,186 @@ footer h3 {
 }
 
 
+/*TABLET SIZE*/
+
+@media screen and (min-width: 767px) {
+
+
+    /*  HEADER START  */
+    
+    .menutop {
+        margin-top: 10px;
+    }
+    
+    header {
+    min-height: 450px;
+}
+    
+    .logo {
+    width: 30%;
+}
+
+    /*  HEADER SLUT  */
+    
+    /*PORTFOLIO START*/
+    
+    .containerforside {
+        flex-direction: row;
+        width: 80%;
+        align-content: flex-start;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    
+    }
+    
+    .kidforside img {
+    margin: auto;
+    width: 80%;
+        margin-top: 30px;
+}
+    
+    .kidforside {
+        width: 40%;
+       
+        margin: 15px;
+        height: 320px;
+    }
+
+   
+    .seminblog {
+    width: 40%;
+}
+   
+
+    /*PORTFOLIO SLUT */
+    
+    /* OM MIG START */
+    
+    .hentcvknap {
+   width: 40%;
+}
+    
+    .minejobs {
+        font-size: 35px;
+    }
+    
+    .migbillede {
+        width: 60%;
+        margin-bottom: 50px;
+        border: #21C152 2px solid;
+        border-radius: 30px;
+    }
+    
+    
+    /* OM MIG SLUT */
+    /*    KONTAKT START*/
+    
+    .form input {
+        display: inline-block;
+    }
+
+    
+    .skifttak, skifttak span {
+        font-size: 35px; 
+    }
+    
+    .form input {
+     margin: auto;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .form {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .form textarea {
+        width: 100%;
+    }
+    
+    #formknap {
+        width: 60%;
+        margin: auto;
+        display: block;
+    }
+    
+    .redbackground {
+        padding-top: 30px;
+    }
+    
+    .kontaktinfo {
+        margin: auto;
+        width: 30%;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+    
+    }
+    
+    @-webkit-keyframes wowowow {
+    0% {
+        opacity: 0;
+    }
+    2% {
+        opacity: 0;
+        -webkit-transform: translateY(-62px);
+    }
+    5% {
+        opacity: 1;
+        -webkit-transform: translateY(-32px);
+    }
+    17% {
+        opacity: 1;
+        -webkit-transform: translateY(-32px);
+    }
+    20% {
+        opacity: 0;
+        -webkit-transform: translateY(-2px);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+    
+
+    /*    KONTAKT SLUT   */
+    
+    
+    /* OPGAVESIDER START */
+    
+    .opgavefaktabox {
+        position:static; 
+    }
+    
+    .artiklen {
+        width: 80%;
+        margin-top: 30px;
+    }
+    
+    .opgaven {
+        width: 100%;
+    }
+    
+    
+    
+    /* OPGAVESIDER SLUT */
+    
+}
+
+/* STOR TABLET PORTFOLIO */
+
+@media screen and (min-width: 900px) {
+    
+    .kidforside {
+        height: 350px;
+    }
+    
+}
 
 
 /*WEB SIZE*/
@@ -694,61 +1057,147 @@ footer h3 {
     .topnav {
         text-align: center;
     }
-
-    /*    HEADER SLUT*/
-    /*PORTFOLIO START*/
-    .containerforside img {
-        border: red solid 2px;
-        width 20%;
-    }
-    /*PORTFOLIO SLUT*/
-    /*    KONTAKT START*/
-    .form input {
-        display: inline-block;
-    }
-
-    .kontaktcontainer hr {
-        display: none;
-    }
-
-
-    /*    KONTAKT SLUT*/
+    
+    header {
+    min-height: 600px; 
+}
+    
+      .logo {
+    width: 25%;
 }
 
-/*TABLET SIZE*/
 
-@media screen and (min-width: 767px) {
-
-
-    /*  HEADER START  */
-    .menutop {
-        margin-top: 10px;
-    }
-
-    /*  HEADER SLUT  */
+    /*    HEADER SLUT*/
+    
     /*PORTFOLIO START*/
-    .containerforside {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        width: 100%;
-
+   
+ 
+    .kidforside {
+        width: 25%;
+        height: 300px;
     }
-
-    .containerforside img {
-        border: red solid 2px;
-        width: 50%;
-    }
-
-    /*PORTFOLIO SLUT */
+    
+    .seminblog {
+    width: 20%;
+}
+    
+    
+    /*PORTFOLIO SLUT*/
+    
     /*    KONTAKT START*/
     .form input {
         display: inline-block;
+        width: 46%;
+    }
+    
+    #brr {
+        display: none;
+    }
+    
+    .woops {
+        display: inline-block;
+        width: 6%;
+    }
+    
+    .bla {
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+    
+    .form textarea {
+        width: 60%;
     }
 
     .kontaktcontainer hr {
         display: none;
     }
+    
+    .kontaktcontainer {
+        flex-direction: row;
+    }
+    
+    .socialcontainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 50px;
+    }
+    
+    .kontaktcontainer h3 {
+        width: 100%;
+        text-align: left;
+    }
+    
+   
+    
+    .kontaktkid {
+        width: 20%;
+    }
+    
+    .kontaktinfo {
+        text-align: left;
+        margin-left: 200px;
+        margin-top: 25px;
+        display: inline-block;
+    }
+    
+    .kontaktinfo p {
+        font-size: 30px;
+    }
+    
+    .kontaktstor {
+        display: block;
+        text-align: left;
+    width: 80%;
+    }
+    
+    .vl {
+    border-left: 3px solid black;
+    height: 300px;
+    float: center;
+    
+    margin-left: -3px;
+    
+}
+    
 
-    /*    KONTAKT SLUT   */
+    /*    KONTAKT SLUT*/
+    
+    /* OPGAVERNE START */
+    
+    .opgavefaktabox {
+    width: 250px;
+    border: medium #FF9D00 solid;
+    padding: 20px;
+    border-radius: 30px;
+    position: fixed;
+    background-color: #FF9D00;
+    right: 3%;
+    color: white;
+    
+}
+    
+    .artiklen {
+        width: 90%;
+    }
+    
+    .opgaven {
+        width: 70%;
+    }
+    
+    
+    /* OPGAVERNE SLUT */
+}
+
+
+/* STOR WEB PGA HEADER */
+
+@media screen and (min-width: 1340px) {
+     header {
+    min-height: 800px; 
+}
+    
+    .kidforside {
+        height: 370px;
+    }
 }
