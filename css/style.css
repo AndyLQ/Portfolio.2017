@@ -54,12 +54,12 @@ header {
 .menuting {
     display: block;
     margin: 10px;
-    
+
 }
 
 .topnav {
     border-bottom: 2px black solid;
-    
+
 }
 
 
@@ -73,7 +73,6 @@ header {
 }
 
 .op {
-    border: thin #FFCF03 solid;
     color: white;
     background-color: #FFCF03;
     position: absolute;
@@ -118,7 +117,6 @@ header {
     margin: auto;
     border: 2px #FFCF03 solid;
     border-radius: 10px;
-    background-color: #;
     margin-top: 30px;
     margin-bottom: 30px;
     height: 500px;
@@ -478,14 +476,13 @@ article .hvemtekst {
 
 #formknap {
     border-radius: 45px;
-    width: 70%;
+    width: 60%;
     margin-bottom: 10px;
+    display: block;
 }
 
-
-
-.form input::placeholder,
-.form textarea::placeholder {
+input::placeholder ,
+textarea::placeholder {
     color: white;
 }
 
@@ -567,8 +564,6 @@ article .hvemtekst {
     margin: auto;
     padding-left: 15%;
 
-
-
 }
 
 .skiftes {
@@ -598,7 +593,7 @@ article .hvemtekst {
     animation: wowowow 12s linear infinite 0s;
 }
 
-@-webkit-keyframes wowowow {
+@keyframes wowowow {
     0% {
         opacity: 0;
     }
@@ -644,9 +639,7 @@ article .hvemtekst {
 
 .opgavefaktabox {
     width: 80%;
-    border: medium #FF9D00 solid;
     padding: 20px;
-    border-radius: ;
     position: static;
     background-color: #FF9D00;
     right: 3%;
@@ -694,15 +687,6 @@ article .hvemtekst {
     margin: 30px 0;
 }
 
-.opgavefaktabox div {
-    border: 2px solid white;
-    background-color: #FF9D00;
-    color: white;
-    border-radius: 15px;
-    display: inline-block;
-    padding: 0 5px 0 5px;
-}
-
 
 .opgavefaktabox a:visited {
     color: white;
@@ -710,7 +694,13 @@ article .hvemtekst {
 
 .opgavefaktabox a {
     text-decoration: none;
+    color: white;
 }
+
+.opgavefaktabox a:hover {
+    text-decoration: underline;
+}
+
 
 .faktaopgavebox {
     width: 100%;
@@ -753,8 +743,6 @@ footer h3 {
 .topnav {
     overflow: hidden;
     border: thin black solid;
-    background-color: ;
-
 }
 
 .topnav a {
@@ -790,7 +778,6 @@ footer h3 {
     cursor: pointer;
     padding: 10px;
     background-color: white;
-    border: 2px white solid;
     border-radius: 15px;
 
 
@@ -895,7 +882,6 @@ footer h3 {
 
     /*  HEADER SLUT  */
     /*PORTFOLIO START*/
-    
     .containerforside {
         flex-direction: row;
         width: 80%;
@@ -926,7 +912,6 @@ footer h3 {
 
     /*PORTFOLIO SLUT */
     /* OM MIG START */
-    
     .hentcvknap {
         width: 40%;
     }
@@ -944,7 +929,6 @@ footer h3 {
 
     /* OM MIG SLUT */
     /*    KONTAKT START*/
-    
     .form input {
         display: inline-block;
     }
@@ -990,36 +974,9 @@ footer h3 {
 
     }
 
-    @-webkit-keyframes wowowow {
-        0% {
-            opacity: 0;
-        }
-        2% {
-            opacity: 0;
-            -webkit-transform: translateY(-62px);
-        }
-        5% {
-            opacity: 1;
-            -webkit-transform: translateY(-32px);
-        }
-        17% {
-            opacity: 1;
-            -webkit-transform: translateY(-32px);
-        }
-        20% {
-            opacity: 0;
-            -webkit-transform: translateY(-2px);
-        }
-        80% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-
 
     /*    KONTAKT SLUT   */
+    
     /* OPGAVESIDER START */
     
     .opgavefaktabox {
@@ -1035,10 +992,9 @@ footer h3 {
         width: 100%;
     }
 
-
-
     /* OPGAVESIDER SLUT */
 }
+
 
 /* STOR TABLET PORTFOLIO */
 
@@ -1051,7 +1007,7 @@ footer h3 {
     .kidforside {
         height: 350px;
     }
-    
+
 
 }
 
@@ -1061,7 +1017,6 @@ footer h3 {
 @media screen and (min-width: 1024px) {
 
     /*   HEADER START */
-    
     .menutop {
         margin-top: 10px;
     }
@@ -1081,7 +1036,6 @@ footer h3 {
 
     /*    HEADER SLUT*/
     /*PORTFOLIO START*/
-    
     .kidforside {
         width: 25%;
         height: 300px;
@@ -1094,20 +1048,26 @@ footer h3 {
 
     /*PORTFOLIO SLUT*/
     /* OM MIG START*/
-    
     .ommigcontainer {
         flex-direction: row;
+
+        width: 90%;
+        margin-top: 50px;
     }
 
     .migbillede {
-        width: 80%;
-        height: auto;
         flex: 0;
-        margin: 30px;
+        width: 50%;
+        height: auto;
+        margin: 0 30px 0 0;
+        align-self: center;
     }
 
     .cv {
-        margin: 30px;
+        margin-left: 30px;
+        width: 50%;
+        margin: auto 0;
+
     }
 
     .hvemcontainer {
@@ -1152,13 +1112,33 @@ footer h3 {
         padding-left: 50px;
     }
 
+    .hentcvknap {
+        display: inline-block;
+        margin: auto;
+        margin-top: 50px;
+        width: 30%;
+        float: right;
+
+
+    }
+
+    .cvknaphent {
+        margin: auto 10px 10px auto;
+        display: block;
+        width: 10%;
+        float: right;
+    }
+
     /* OM MIG SLUT*/
+    
+    
     /*KONTAKT START*/
     
     .form input {
         display: inline-block;
         width: 46%;
     }
+
 
     #brr {
         display: none;
@@ -1193,11 +1173,11 @@ footer h3 {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    
+
 
     .kontaktcontainer h3 {
         width: 100%;
-        text-align: right;
+        text-align: center;
     }
 
 
@@ -1228,34 +1208,23 @@ footer h3 {
         height: 300px;
         margin-top: 30px;
     }
-    
+
     .skifttak {
         padding-left: 300px;
     }
-    
+
     .socialkid {
-        flex:0;
+        flex: 0;
     }
-    
+
     .socialkid img {
         width: 100px;
     }
 
+
+
     /* KONTAKT SLUT*/
     /* OPGAVERNE START */
-    
-    .opgavefaktabox {
-        width: 250px;
-        border: medium #FF9D00 solid;
-        padding: 20px;
-        border-radius: 30px;
-        position: fixed;
-        background-color: #FF9D00;
-        right: 3%;
-        color: white;
-
-    }
-
     .artiklen {
         width: 90%;
     }
@@ -1265,8 +1234,8 @@ footer h3 {
     }
 
 
-    /* OPGAVERNE SLUT */
 }
+    /* OPGAVERNE SLUT */
 
 
 /* STOR WEB PGA HEADER */
@@ -1280,3 +1249,33 @@ footer h3 {
         height: 370px;
     }
 }
+
+/*ANIMATION TIL KONTAKTSIDE*/
+
+@keyframes wowowow {
+        0% {
+            opacity: 0;
+        }
+        2% {
+            opacity: 0;
+            transform: translateY(-62px);
+        }
+        5% {
+            opacity: 1;
+            transform: translateY(-32px);
+        }
+        17% {
+            opacity: 1;
+            transform: translateY(-32px);
+        }
+        20% {
+            opacity: 0;
+            transform: translateY(-2px);
+        }
+        80% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
