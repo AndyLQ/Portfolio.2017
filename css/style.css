@@ -37,12 +37,12 @@ body {
 /*HEADER START*/
 
 header {
-    background-image: url("../images/headerpic2.png");
+    background-image: url("../images/headertavle5.png");
     background-position: left top;
     background-size: 100%;
     background-repeat: no-repeat;
     height: auto;
-    min-height: 400px;
+    min-height: 200px;
 }
 
 .logo {
@@ -51,21 +51,17 @@ header {
     margin: 15px;
 }
 
-
 .menuting {
-    border: white 2px solid;
-    border-radius: 15px;
-    display: inline-block;
+    display: block;
     margin: 10px;
-    background-color: white;
-
-
+    
 }
-
 
 .topnav {
-    border-bottom: thin black solid;
+    border-bottom: 2px black solid;
+    
 }
+
 
 
 /*HEADER SLUT*/
@@ -108,12 +104,12 @@ header {
 }
 
 .mereomcontainer {
-        display: flex;
+    display: flex;
     flex-direction: column;
-    }
+}
 
 .mereomcontainer article {
-    flex:1;
+    flex: 1;
 }
 
 
@@ -135,7 +131,7 @@ header {
 
 .kidforside:hover img {
     transform: scale(1.1);
-    
+
 }
 
 .kidforside img {
@@ -171,6 +167,7 @@ header {
     display: block;
     margin-top: 50px;
     flex: 1;
+    border: #21C152 2px solid;
 }
 
 .ommigcontainer {
@@ -554,7 +551,7 @@ article .hvemtekst {
 }
 
 .kontaktinfo h1 {
- display: inline-block;
+    display: inline-block;
     font-size: 31px;
 }
 
@@ -569,8 +566,8 @@ article .hvemtekst {
     padding: 30px 0px;
     margin: auto;
     padding-left: 15%;
-    
-    
+
+
 
 }
 
@@ -655,7 +652,7 @@ article .hvemtekst {
     right: 3%;
     color: white;
     margin: auto;
-    
+
 }
 
 .opgavefaktabox p {
@@ -721,7 +718,7 @@ article .hvemtekst {
     margin: auto;
     background-color: #FF9D00;
 }
-    
+
 
 
 /*OPGAVESIDEN SLUT*/
@@ -757,7 +754,7 @@ footer h3 {
     overflow: hidden;
     border: thin black solid;
     background-color: ;
- 
+
 }
 
 .topnav a {
@@ -826,21 +823,24 @@ footer h3 {
 
 /*Fra w3schools SLUT*/
 
-
-
 /* LILLE MOBILE TIL PORTFOLIO */
+
 @media screen and (max-width: 600px) {
-    
+
     .kidforside {
         width: 90%;
         height: auto;
     }
-    
+
     .op {
         position: relative;
     }
-    
-    
+
+    header {
+        height: auto;
+    }
+
+
 }
 
 /*MOBILE fra w3 schools */
@@ -884,17 +884,16 @@ footer h3 {
     .menutop {
         margin-top: 10px;
     }
-    
+
     header {
-    min-height: 450px;
-}
-    
+        min-height: 450px;
+    }
+
     .logo {
-    width: 30%;
-}
+        width: 30%;
+    }
 
     /*  HEADER SLUT  */
-    
     /*PORTFOLIO START*/
     
     .containerforside {
@@ -903,48 +902,46 @@ footer h3 {
         align-content: flex-start;
         justify-content: space-around;
         flex-wrap: wrap;
-    
+
     }
-    
+
     .kidforside img {
-    margin: auto;
-    width: 80%;
+        margin: auto;
+        width: 80%;
         margin-top: 30px;
-}
-    
+    }
+
     .kidforside {
         width: 40%;
-       
+
         margin: 15px;
         height: 320px;
     }
 
-   
+
     .seminblog {
-    width: 40%;
-}
-   
+        width: 40%;
+    }
+
 
     /*PORTFOLIO SLUT */
-    
     /* OM MIG START */
     
     .hentcvknap {
-   width: 40%;
-}
-    
+        width: 40%;
+    }
+
     .minejobs {
         font-size: 35px;
     }
-    
+
     .migbillede {
         width: 60%;
         margin-bottom: 50px;
-        border: #21C152 2px solid;
         border-radius: 30px;
     }
-    
-    
+
+
     /* OM MIG SLUT */
     /*    KONTAKT START*/
     
@@ -952,107 +949,110 @@ footer h3 {
         display: inline-block;
     }
 
-    
-    .skifttak, skifttak span {
-        font-size: 35px; 
+
+    .skifttak,
+    skifttak span {
+        font-size: 35px;
     }
-    
+
     .form input {
-     margin: auto;
+        margin: auto;
         width: 100%;
         margin-bottom: 10px;
         margin-top: 10px;
     }
-    
+
     .form {
         width: 80%;
         margin: auto;
     }
-    
+
     .form textarea {
         width: 100%;
     }
-    
+
     #formknap {
         width: 60%;
         margin: auto;
         display: block;
     }
-    
+
     .redbackground {
         padding-top: 30px;
     }
-    
+
     .kontaktinfo {
         margin: auto;
         width: 30%;
         text-align: center;
         margin-bottom: 30px;
         font-size: 20px;
-    
+
     }
-    
+
     @-webkit-keyframes wowowow {
-    0% {
-        opacity: 0;
+        0% {
+            opacity: 0;
+        }
+        2% {
+            opacity: 0;
+            -webkit-transform: translateY(-62px);
+        }
+        5% {
+            opacity: 1;
+            -webkit-transform: translateY(-32px);
+        }
+        17% {
+            opacity: 1;
+            -webkit-transform: translateY(-32px);
+        }
+        20% {
+            opacity: 0;
+            -webkit-transform: translateY(-2px);
+        }
+        80% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
     }
-    2% {
-        opacity: 0;
-        -webkit-transform: translateY(-62px);
-    }
-    5% {
-        opacity: 1;
-        -webkit-transform: translateY(-32px);
-    }
-    17% {
-        opacity: 1;
-        -webkit-transform: translateY(-32px);
-    }
-    20% {
-        opacity: 0;
-        -webkit-transform: translateY(-2px);
-    }
-    80% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-    
+
 
     /*    KONTAKT SLUT   */
-    
-    
     /* OPGAVESIDER START */
     
     .opgavefaktabox {
-        position:static; 
+        position: static;
     }
-    
+
     .artiklen {
         width: 80%;
         margin-top: 30px;
     }
-    
+
     .opgaven {
         width: 100%;
     }
-    
-    
-    
+
+
+
     /* OPGAVESIDER SLUT */
-    
 }
 
 /* STOR TABLET PORTFOLIO */
 
 @media screen and (min-width: 900px) {
-    
+
+    header {
+        height: 550px;
+    }
+
     .kidforside {
         height: 350px;
     }
     
+
 }
 
 
@@ -1069,118 +1069,112 @@ footer h3 {
     .topnav {
         text-align: center;
     }
-    
+
     header {
-    min-height: 600px; 
-}
-    
-      .logo {
-    width: 25%;
-}
+        min-height: 610px;
+    }
+
+    .logo {
+        width: 25%;
+    }
 
 
     /*    HEADER SLUT*/
-    
     /*PORTFOLIO START*/
-   
- 
+    
     .kidforside {
         width: 25%;
         height: 300px;
     }
-    
+
     .seminblog {
-    width: 20%;
-}
-    
-    
+        width: 20%;
+    }
+
+
     /*PORTFOLIO SLUT*/
-    
-/* OM MIG START*/
+    /* OM MIG START*/
     
     .ommigcontainer {
         flex-direction: row;
     }
-    
+
     .migbillede {
         width: 80%;
         height: auto;
         flex: 0;
         margin: 30px;
     }
-    
+
     .cv {
         margin: 30px;
     }
-    
+
     .hvemcontainer {
         flex-direction: row;
     }
-    
+
     .mereomcontainer {
         flex-direction: row;
         width: 80%;
         margin: auto;
     }
-    
+
     .mereomcontainer article {
         width: 40%;
     }
-    
+
     .mereom {
         display: block;
     }
-    
+
     .skillcontainer {
         flex-direction: row;
-  
+
     }
-    
+
     .skill1 {
         padding: 50px;
         padding-top: 0;
 
     }
-    
+
     .skill2 {
         padding: 50px;
-      
+
         height: 100%;
         margin-top: 0;
         margin-right: 0;
         padding-top: 0;
     }
-    
+
     .skillting h3 {
         padding-left: 50px;
     }
-  
-    
-    
-/* OM MIG SLUT*/
-    
+
+    /* OM MIG SLUT*/
     /*KONTAKT START*/
     
     .form input {
         display: inline-block;
         width: 46%;
     }
-    
+
     #brr {
         display: none;
     }
-    
+
     .woops {
         display: inline-block;
         width: 6%;
     }
-    
+
     .bla {
         width: 60%;
         display: block;
         margin: auto;
     }
-    
+
     .form textarea {
         width: 60%;
     }
@@ -1188,77 +1182,89 @@ footer h3 {
     .kontaktcontainer hr {
         display: none;
     }
-    
+
     .kontaktcontainer {
         flex-direction: row;
+        width: 80%;
+        margin: auto;
     }
-    
+
     .socialcontainer {
         flex-direction: row;
         flex-wrap: wrap;
-        margin-left: 50px;
     }
     
+
     .kontaktcontainer h3 {
         width: 100%;
-        text-align: left;
+        text-align: right;
     }
-    
-   
+
+
     .kontaktkid {
         width: 20%;
     }
-    
+
     .kontaktinfo {
         text-align: left;
-        margin-left: 200px;
         margin-top: 25px;
         display: inline-block;
     }
-    
+
     .kontaktinfo p {
         font-size: 30px;
     }
-    
+
     .kontaktstor {
         display: block;
-        text-align: left;
-    width: 80%;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .vl {
+        border-left: 3px solid black;
+        height: 300px;
+        margin-top: 30px;
     }
     
-    .vl {
-    border-left: 3px solid black;
-    height: 300px;
-    float: center;
-    margin-left: -3px;
+    .skifttak {
+        padding-left: 300px;
+    }
+    
+    .socialkid {
+        flex:0;
+    }
+    
+    .socialkid img {
+        width: 100px;
+    }
 
-}
-    
-    /*    KONTAKT SLUT*/
-    
+    /* KONTAKT SLUT*/
     /* OPGAVERNE START */
     
     .opgavefaktabox {
-    width: 250px;
-    border: medium #FF9D00 solid;
-    padding: 20px;
-    border-radius: 30px;
-    position: fixed;
-    background-color: #FF9D00;
-    right: 3%;
-    color: white;
-    
-}
-    
+        width: 250px;
+        border: medium #FF9D00 solid;
+        padding: 20px;
+        border-radius: 30px;
+        position: fixed;
+        background-color: #FF9D00;
+        right: 3%;
+        color: white;
+
+    }
+
     .artiklen {
         width: 90%;
     }
-    
+
     .opgaven {
         width: 70%;
     }
-    
-    
+
+
     /* OPGAVERNE SLUT */
 }
 
@@ -1266,10 +1272,10 @@ footer h3 {
 /* STOR WEB PGA HEADER */
 
 @media screen and (min-width: 1340px) {
-     header {
-    min-height: 800px; 
-}
-    
+    header {
+        min-height: 800px;
+    }
+
     .kidforside {
         height: 370px;
     }
