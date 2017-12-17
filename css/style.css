@@ -674,8 +674,10 @@ textarea::placeholder {
 }
 
 .opgavebilleder {
-    width: 100%;
+    width: 80%;
     height: auto;
+    display: block;
+    margin: auto;
 }
 
 .opgaveoverskrift {
@@ -709,6 +711,26 @@ textarea::placeholder {
     background-color: #FF9D00;
 }
 
+.app {
+    width: 30%;
+}
+
+.refleksion {
+    width: 60%;
+    display: block;
+}
+
+.artikel4 {
+    width: 80%;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+}
+
+.refleksion h3 {
+    font-size: 40px;
+    
+}
 
 
 /*OPGAVESIDEN SLUT*/
