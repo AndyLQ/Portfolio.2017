@@ -82,17 +82,21 @@ header {
     border-radius: 7px;
 }
 
+.seminblog2 {
+ display: block;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
 
 .containerforside a {
     text-decoration: none;
 }
 
 .seminblog {
-    width: 60%;
-    display: block;
-    margin: auto;
-    height: auto;
-    margin-bottom: 30px;
+ height: auto;
+    width: 100%;
 }
 
 .containerforside {
@@ -760,7 +764,7 @@ footer h3 {
 
 /*FOOTER SLUT*/
 
-/* taget fra w3 schools START (er redigeret i af mig)*/
+/* taget fra w3 schools START (er redigeret i af mig) (https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) */
 
 .topnav {
     overflow: hidden;
@@ -927,7 +931,8 @@ footer h3 {
     }
 
 
-    .seminblog {
+    
+    .seminblog2 {
         width: 40%;
     }
 
@@ -1063,9 +1068,11 @@ footer h3 {
         height: 300px;
     }
 
-    .seminblog {
+    .seminblog2 {
         width: 20%;
     }
+    
+   
 
 
     /*PORTFOLIO SLUT*/
