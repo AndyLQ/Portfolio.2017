@@ -90,6 +90,14 @@ header {
 }
 
 
+.seminblog2 {
+ display: block;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
 .containerforside a {
     text-decoration: none;
 }
@@ -931,7 +939,10 @@ footer h3 {
     }
 
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> 0bcbb304fd4ef2752e78c50f8f456258507c57b6
     .seminblog2 {
         width: 40%;
     }
