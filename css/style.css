@@ -83,16 +83,21 @@ header {
 }
 
 
+.seminblog2 {
+ display: block;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
 .containerforside a {
     text-decoration: none;
 }
 
 .seminblog {
-    width: 60%;
-    display: block;
-    margin: auto;
-    height: auto;
-    margin-bottom: 30px;
+ height: auto;
+    width: 100%;
 }
 
 .containerforside {
@@ -927,7 +932,7 @@ footer h3 {
     }
 
 
-    .seminblog {
+    .seminblog2 {
         width: 40%;
     }
 
@@ -1063,7 +1068,7 @@ footer h3 {
         height: 300px;
     }
 
-    .seminblog {
+    .seminblog2 {
         width: 20%;
     }
 
